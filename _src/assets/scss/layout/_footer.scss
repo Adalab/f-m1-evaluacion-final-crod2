@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+.button__arrow {
+    width: 45px;
+    height: 45px;
+    background: $colorTitle;
+    border-radius: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__nav-arrow {
+    text-align: center;
+}
+
+.page__footer {
+    background: $colorDark;
+    color: $colorTitle;
+    font-family: $roboto;
+    font-weight: lighter;
+    text-align: center;
+    padding: 60px 0 45px;
+    position: relative;
+}
+
+
+.footer__menu {
+    font-size: $sizeDefault;
+}
+
+.footer__menu-list {
+    list-style: none;
+    text-transform: uppercase;
+    line-height: 30px;
+    padding-left: 0;
+    
+}
+
+.footer__copy {
+    font-size: $sizeSmall;
+}
+
+span {
+    color: $colorButton;
+}
+
+.wrapper {
+    padding: 0 15px;
+}
