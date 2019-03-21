@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    padding: 0 15px;
+}
+
+.main__article-item1 {
+    margin: 30px 0 1px;
+    font-family: $roboto;
+    font-size: $sizeSmall;
+    color: $colorLight;
+    font-weight: lighter;
+}
+
+.main__article-title {
+    @include subtitleStyle;
+}
+
+.main__article-item2 {
+    @include paragraphStyle ($colorText);
+}
+
+.button__go {
+    margin-bottom: 45px;
+    font-family: $roboto;
+    font-size: $sizeXL;
+    color: $colorButton;
+    border: solid $colorButton 2px;
+    border-radius: 22.5px;
+    width: 76px;
+    height: 45px;
+    text-align: center;
+}
+
+.button__text {
+margin: 0;
+line-height: 45px;
+}
