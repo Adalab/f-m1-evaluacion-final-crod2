@@ -32,6 +32,10 @@ body {
     width: 76px;
     height: 45px;
     text-align: center;
+    &:hover {
+        font-size: $sizeSubtitle;
+        transition: font-size ease 0.7s;
+    }
 }
 
 .button__text {

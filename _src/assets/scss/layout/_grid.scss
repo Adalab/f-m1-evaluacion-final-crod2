@@ -43,6 +43,10 @@ body {
     width: 184px;
     height: 45px;
     text-align: center;
+    &:hover {
+        background: $colorLight;
+        transition: background ease 0.5s;
+    }
 }
 
 .button__text {
