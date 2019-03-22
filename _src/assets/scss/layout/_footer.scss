@@ -5,7 +5,7 @@ body {
 .button__arrow {
     width: 45px;
     height: 45px;
-    background: $colorTitle;
+    background: $colorWhite;
     border-radius: 50% 50%;
     position: absolute;
     top: 0;
@@ -18,7 +18,7 @@ body {
 
 .page__footer {
     background: $colorDark;
-    color: $colorTitle;
+    color: $colorWhite;
     font-family: $roboto;
     font-weight: lighter;
     text-align: center;
