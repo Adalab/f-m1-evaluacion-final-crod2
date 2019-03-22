@@ -1,16 +1,18 @@
 @mixin subtitleStyle {
     margin: 0;
     font-family: $robotoSlab;
-    font-size: $sizeSubtitle;
-    color: $colorBlack;
     font-weight: bold;
+    font-size: 24px;
+    color: $colorBlack;
     text-transform: capitalize;
 }
 
 @mixin paragraphStyle ($color) {
     margin: 15px 0 30px;
     font-family: $roboto;
-    font-size: $sizeLarge;
-    color: $color;
     font-weight: lighter;
+    font-size: 18px;
+    line-height: 30px;
+    color: $color;
+    
 }
