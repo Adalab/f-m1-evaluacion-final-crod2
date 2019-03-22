@@ -1,83 +1,77 @@
 body {
     margin: 0;
 }
-
 .container {
     background: $colorBackground;
     text-align: center;
     padding-bottom: 60px;
 }
-
+.wrapper {
+    padding: 0 15px;
+    @media all and (min-width: 768px) {
+        padding: 0 39px;
+    }
+    @media all and (min-width: 1200px) {
+        padding: 0 275px;
+    }
+}
+.grid__subtitle {
+    @include subtitleStyle;
+    padding: 30px 0 45px 0;
+    @media all and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 45px;
+    }
+    @media all and (min-width: 1200px) {
+        padding-top: 60px;
+        font-size: 32px;
+    }
+}
+.grid__item-1 {
+    font-family: $robotoSlab;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    @media all and (min-width: 768px) {
+        font-size: 24px;
+    }
+}
+.grid__item-2 {
+    @include paragraphStyle ($colorBlack);
+    margin: 0;
+    @media all and (min-width: 768px) {
+        font-size: 20px;
+    }
+}
 .grid {
     @media all and (min-width: 768px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-
         .grid__item-1 {
-            margin-bottom: 14px;
+            margin-bottom:14px;
         }
-
         .grid__item-2 {
             margin-bottom: 60px;
         }
-
-        .item1 {
-            grid-column: 1/2;
-            padding: 0;
+        .grid__item {
+            margin: 0;
         }
-
-        .item2 {
-            grid-column: 2/3;
-            padding: 0;
-        }
-
-        .item3 {
-            grid-column: 3/4;
-            padding: 0;
-        }
+            .item1 {
+                grid-column: 1/2;
+                padding: 0;
+            }
+            .item2 {
+                grid-column: 2/3;
+                padding: 0;
+            }
+            .item3 {
+                grid-column: 3/4;
+                padding: 0;
+            }
     }
 }
-
-.grid__subtitle {
-    @include subtitleStyle;
-    padding: 30px 0 45px;
-
-    @media all and (min-width: 768px) {
-        font-size: 26px;
-        font-weight: bold;
-    }
-}
-
-.grid__item {
-    @include paragraphStyle ($colorBlack);
-    padding: 0 70px 45px 70px;
-    margin: 0;
-    line-height: 30px;
-}
-
-.grid__item-1 {
-    font-weight: bold;
-    margin: 0;
-
-    @media all and (min-width: 768px) {
-        font-size: 24px;
-    }
-}
-
-.grid__item-2 {
-    margin: 0;
-
-    @media all and (min-width: 768px) {
-        font-size: 20px;
-    }
-}
-
 .button__reasons {
-    margin-left: 68px;
-    font-family: $roboto;
-    font-size: $sizeXL;
-    color: $colorWhite;
     background: $colorButton;
     border-radius: 22.5px;
     width: 184px;
@@ -88,13 +82,17 @@ body {
         background: $colorLight;
         transition: background ease 0.5s;
     }
-
     @media all and (min-width: 768px) {
-        margin: 0;
+        width: 210px;
+    }
+    @media all and (min-width: 1200px) {
+        width: 255px;
     }
 }
-
 .button__text {
-margin: 0;
-line-height: 45px;
+    margin: 0;
+    font-family: $roboto;
+    font-size: 20px;
+    line-height: 45px;
+    color: $colorWhite;
 }
