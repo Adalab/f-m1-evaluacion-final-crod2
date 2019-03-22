@@ -5,6 +5,14 @@ body {
 .wrapper {
     padding: 0 15px;
 
+    @media all and (min-width: 768px) {
+        padding: 0 39px;
+    }
+
+    @media all and (min-width: 768px) {
+        padding: 0 275px;
+    }
+
 }
 
 .hero {
@@ -26,6 +34,7 @@ body {
     left: 0;
     color: $colorTitle;
     width: 100%;
+    margin: 0;
 }
 
 .hero__text h1 {
@@ -34,12 +43,35 @@ body {
     font-family: $robotoSlab;
     font-weight: bold;
     margin-bottom: 10px;
+
+    @media all and (min-width: 768px) {
+        font-size: 80px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+
+    @media all and (min-width: 1200px) {
+        font-size: 100px;
+        width: 750px;
+        margin-right: 0;
+        display: inline-block;
+    }
 }
 
-.hero__text h2 {
+.hero__text p {
     font-size: $sizeDefault;
     font-family: $roboto;
     font-weight: lighter;
+
+    @media all and (min-width: 768px) {
+        font-size: 24px; 
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
 }
 
 .button__scroll {
@@ -49,7 +81,7 @@ body {
     border-radius: 50% 50%;
     position: absolute;
     bottom: 53px;
-    left: 123px;
+    left: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,3 +95,4 @@ body {
     top: 0;
     left: 0;
 }
+
