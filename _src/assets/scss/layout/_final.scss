@@ -1,0 +1,22 @@
+.prizing__page {
+    background: $colorDark;
+    color: $colorWhite;
+}
+
+.prizing__item {
+    text-align: center;
+}
+
+.subtitle__container {
+    @media all and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px 0 30px;
+    }
+    
+
+}
+
+.subtitle {
+    margin: 0;
+}
